@@ -29,7 +29,7 @@ services:
 
     php-fpm:
         build:
-            context: "."
+            context: docker/fpm
         environment:
             - "DB_HOST=postgres"
             - "DB_PORT=5432"
